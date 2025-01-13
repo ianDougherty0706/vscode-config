@@ -1,0 +1,204 @@
+{
+  // ! Appearance
+  "workbench.activityBar.location": "hidden",
+  "editor.fontFamily": "CaskaydiaMono NFM",
+  "editor.fontLigatures": false,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "editor.minimap.enabled": false,
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.showTabs": "multiple",
+  "window.commandCenter": false,
+  "window.density.editorTabHeight": "compact",
+  "window.menuBarVisibility": "compact",
+  "window.restoreWindows": "none",
+  "extensions.ignoreRecommendations": true,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "workbench.layoutControl.enabled": false,
+  "window.title": "",
+  "workbench.sideBar.location": "right",
+  "editor.lineHeight": 1.2,
+  "editor.fontSize": 15,
+  "editor.lightbulb.enabled": "off",
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.fontSize": 15,
+  "workbench.colorCustomizations": {
+    "scrollbar.shadow": "#00000000",
+    "statusBar.background": "#24273a",
+    "statusBar.noFolderBackground": "#24273a",
+    "statusBar.debuggingBackground": "#24273a",
+    "editorGroupHeader.border": "#363a4f",
+    "editorGroupHeader.tabsBackground": "#1e2030",
+    "tab.activeBorderTop": "#24273a",
+    "tab.border": "#1e2030",
+    "activityBar.background": "#24273a",
+    "activityBar.border": "#363a4f",
+    "sideBarSectionHeader.background": "#24273a",
+    "sideBar.background": "#24273a",
+    "sideBar.border": "#363a4f",
+    "titleBar.activeBackground": "#1e2030",
+    "titleBar.inactiveBackground": "#1e2030"
+  },
+  // ! Functionality
+  "workbench.settings.editor": "json",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // ! Prettier
+  "prettier.printWidth": 180,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // ! VsCodeVim Appearance Settings
+  "editor.cursorSurroundingLines": 10,
+  "vim.smartRelativeLine": true,
+  // ! VSCodeVim Settings
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.useCtrlKeys": true,
+  // ! Highlighted Yank
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(238, 212, 159, 0.5)",
+  "vim.highlightedyank.textColor": "rgb(36, 39, 58)",
+  "vim.highlightedyank.duration": 150,
+  // ! Vim Keybinds
+  "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["<Escape>"], "commands": [":noh"] },
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "/"],
+      "commands": ["fuzzySearch.activeTextEditor"]
+    },
+    {
+      "before": ["leader", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["leader", "T"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["leader", "D"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["leader", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    // ! c
+    {
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    // ! d
+    {
+      "before": ["leader", "d", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    // ! f
+    {
+      "before": ["leader", "f", "t"],
+      "commands": ["workbench.action.files.openFolder"]
+    },
+    {
+      "before": ["leader", "f", "r"],
+      "commands": ["workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"]
+    },
+    { "before": ["leader", "f", "f"], "commands": ["editor.action.formatDocument"] },
+    // ! g
+    {
+      "before": ["leader", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["leader", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["leader", "g", "I"],
+      "commands": ["editor.action.goToImplimentation"]
+    },
+    {
+      "before": ["leader", "g", "D"],
+      "commands": ["editor.action.revealDeclaration"]
+    },
+    // ! p
+    { "before": ["leader", "p", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "p", "h"], "commands": [":split"] },
+    // ! r
+    {
+      "before": ["leader", "r", "d"],
+      "commands": ["workbench.action.debug.start"]
+    },
+    {
+      "before": ["leader", "r", "r"],
+      "commands": ["workbench.action.debug.run"]
+    },
+    // ! s
+    {
+      "before": ["leader", "s", "h"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["leader", "s", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["leader", "s", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "s", "."],
+      "commands": ["workbench.action.openRecent"]
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    { "before": ["<C-h>"], "commands": ["cursorLeft"] },
+    { "before": ["<C-l>"], "commands": ["cursorRight"] },
+    { "before": ["<C-j>"], "commands": ["cursorDown"] },
+    { "before": ["<C-k>"], "commands": ["cursorUp"] }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
+  ]
+}
