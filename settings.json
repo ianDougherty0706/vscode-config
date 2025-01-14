@@ -3,7 +3,6 @@
   "workbench.activityBar.location": "hidden",
   "editor.fontFamily": "CaskaydiaMono NFM",
   "editor.fontLigatures": false,
-  "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.iconTheme": "catppuccin-macchiato",
   "editor.minimap.enabled": false,
   "workbench.tips.enabled": false,
@@ -12,7 +11,6 @@
   "workbench.editor.showTabs": "multiple",
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
-  "window.menuBarVisibility": "compact",
   "window.restoreWindows": "none",
   "extensions.ignoreRecommendations": true,
   "editor.tabSize": 2,
@@ -22,7 +20,7 @@
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "workbench.layoutControl.enabled": false,
-  "window.title": "",
+  "window.title": "NeoCode",
   "workbench.sideBar.location": "right",
   "editor.lineHeight": 1.2,
   "editor.fontSize": 15,
@@ -30,22 +28,31 @@
   "editor.stickyScroll.enabled": false,
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.fontSize": 15,
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#8aadf4", "#24273a"],
+  "vim.statusBarColors.insert": ["#a6da95", "#24273a"],
+  "vim.statusBarColors.commandlineinprogress": ["#f5a97f", "#24273a"],
+  "vim.statusBarColors.searchinprogressmode": ["#f5a97f", "#24273a"],
+  "vim.statusBarColors.visual": ["#c6a0f6", "#24273a"],
+  "vim.statusBarColors.visualline": ["#c6a0f6", "#24273a"],
+  "vim.statusBarColors.visualblock": ["#c6a0f6", "#24273a"],
+  "vim.statusBarColors.replace": ["#ed8796", "#24273a"],
   "workbench.colorCustomizations": {
     "scrollbar.shadow": "#00000000",
-    "statusBar.background": "#24273a",
-    "statusBar.noFolderBackground": "#24273a",
-    "statusBar.debuggingBackground": "#24273a",
-    "editorGroupHeader.border": "#363a4f",
+    "statusBar.background": "#8aadf4",
+    "statusBar.noFolderBackground": "#8aadf4",
+    "statusBar.debuggingBackground": "#8aadf4",
     "editorGroupHeader.tabsBackground": "#1e2030",
     "tab.activeBorderTop": "#24273a",
     "tab.border": "#1e2030",
     "activityBar.background": "#24273a",
     "activityBar.border": "#363a4f",
-    "sideBarSectionHeader.background": "#24273a",
-    "sideBar.background": "#24273a",
-    "sideBar.border": "#363a4f",
+    "sideBarSectionHeader.background": "#1e2030",
+    "sideBar.background": "#1e2030",
     "titleBar.activeBackground": "#1e2030",
-    "titleBar.inactiveBackground": "#1e2030"
+    "titleBar.inactiveBackground": "#1e2030",
+    "statusBar.foreground": "#24273a",
+    "statusBar.debuggingForeground": "#24273a"
   },
   // ! Functionality
   "workbench.settings.editor": "json",
@@ -105,10 +112,6 @@
     {
       "before": ["leader", "e"],
       "commands": ["vscode-harpoon.editEditors"]
-    },
-    {
-      "before": ["leader", "T"],
-      "commands": ["workbench.view.explorer"]
     },
     {
       "before": ["leader", "D"],
@@ -187,7 +190,7 @@
     {
       "before": ["leader", "s", "."],
       "commands": ["workbench.action.openRecent"]
-    },
+    }
   ],
   "vim.insertModeKeyBindings": [
     { "before": ["<C-h>"], "commands": ["cursorLeft"] },
@@ -199,6 +202,13 @@
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
     { "before": [">"], "commands": ["editor.action.indentLines"] },
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
-  ]
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    {
+      "before": ["leader", "c", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
+  ],
+  "git.openRepositoryInParentFolders": "never",
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "Catppuccin Macchiato"
 }
