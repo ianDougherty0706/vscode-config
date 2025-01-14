@@ -32,17 +32,13 @@
   // * File Explorer Navigation
   {
     "key": "ctrl+s",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "ctrl+s",
     "command": "workbench.action.focusSideBar",
     "when": "editorTextFocus"
   },
   {
     "key": "ctrl+s",
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "editorFocus && sideBarVisible"
+    "when": "sideBarVisible"
   },
   {
     "key": "n",
