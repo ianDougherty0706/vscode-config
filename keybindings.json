@@ -33,7 +33,7 @@
   {
     "key": "ctrl+s",
     "command": "workbench.action.focusSideBar",
-    "when": "editorTextFocus"
+    "when": "!sideBarVisible"
   },
   {
     "key": "ctrl+s",
