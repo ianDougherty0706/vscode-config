@@ -31,12 +31,12 @@
   },
   // * File Explorer Navigation
   {
-    "key": "ctrl+s",
+    "key": "alt+x",
     "command": "workbench.files.action.focusFilesExplorer",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+s",
+    "key": "alt+x",
     "command": "workbench.action.toggleSidebarVisibility",
     "when": "sideBarVisible"
   },
