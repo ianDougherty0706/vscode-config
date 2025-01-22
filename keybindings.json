@@ -4,7 +4,7 @@
     "key": "ctrl+q",
     "command": "workbench.action.closeActiveEditor"
   },
-  // * Terminal Navigation
+  // ! Terminal Navigation
   {
     "key": "ctrl+shift+a",
     "command": "workbench.action.terminal.focusNext",
@@ -29,7 +29,7 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  // * File Explorer Navigation
+  // ! File Explorer Navigation
   {
     "key": "alt+x",
     "command": "workbench.files.action.focusFilesExplorer",
@@ -80,7 +80,7 @@
     "command": "copyRelativeFilePath",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
-  // * Quick Open Navigation
+  // ! Quick Open Navigation
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
@@ -101,7 +101,7 @@
     "command": "extension.vim_ctrl+p",
     "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode' && !inQuickOpen"
   },
-  // * Harpoon
+  // ! Harpoon
   {
     "key": "ctrl+h",
     "command": "vscode-harpoon.gotoEditor1",
