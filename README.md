@@ -1,5 +1,7 @@
 # vscode-config
 
+![Alt text](https://github.com/ianDougherty0706/vscode-config/blob/main/assets/rose-pine-neocode.png)
+
 ### Themes
 - Rose Pine - Rose Pine
 - Material Theme Icons - Equinuosco
