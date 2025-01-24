@@ -154,6 +154,11 @@
   },
   // ! Hide Completions
   {
+  "key": "ctrl+e",
+  "command": "extension.vim_ctrl+e",
+  "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl && !inQuickOpen && !inlineSuggestionVisible && !suggestWidgetVisible"
+  },
+  {
     "key": "ctrl+e",
     "command": "workbench.action.closeQuickOpen",
     "when": "inQuickOpen"
