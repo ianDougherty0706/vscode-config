@@ -33,7 +33,7 @@
   {
     "key": "alt+x",
     "command": "workbench.files.action.focusFilesExplorer",
-    "when": "editorTextFocus"
+    "when": "editorFocus | !editorIsOpen"
   },
   {
     "key": "alt+x",
@@ -145,5 +145,6 @@
   {
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
-  }
+  },
+  
 ]
