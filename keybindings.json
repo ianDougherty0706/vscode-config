@@ -123,16 +123,18 @@
     "when": "vim.mode != 'Insert'"
   },
   {
-    "key": "shift+l",
-    "command": "workbench.action.nextEditor"
-  },
-  {
     "key": "ctrl+pagedown",
     "command": "-workbench.action.nextEditor"
   },
   {
+    "key": "shift+l",
+    "command": "workbench.action.nextEditor",
+    "when": "!editorTextFocus"
+  },
+  {
     "key": "shift+h",
-    "command": "workbench.action.previousEditor"
+    "command": "workbench.action.previousEditor",
+    "when": "!editorTextFocus"
   },
   {
     "key": "ctrl+pageup",

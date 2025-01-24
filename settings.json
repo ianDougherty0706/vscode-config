@@ -105,6 +105,8 @@
   "vim.statusBarColors.visualblock": ["#c4a7e7", "#191724"],
   "vim.statusBarColors.replace": ["#eb6f92", "#191724"],
   "workbench.colorCustomizations": {
+    "terminal.background": "#191724",
+    "panel.background": "#191724",
     "scrollbar.shadow": "#00000000",
     "statusBar.background": "#ebbcba",
     "statusBar.noFolderBackground": "#ebbcba",
@@ -302,4 +304,5 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
+  "terminal.explorerKind": "external",
 }
