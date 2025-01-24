@@ -148,5 +148,9 @@
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
   },
-  
+  {
+    "key": "space q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!editorTextFocus"
+  }
 ]
