@@ -70,6 +70,7 @@
   "workbench.activityBar.location": "hidden",
   "editor.fontFamily": "CaskaydiaMono NFM",
   "editor.fontLigatures": false,
+  "editor.suggest.insertMode": "replace",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "editor.minimap.enabled": false,
   "workbench.tips.enabled": false,
@@ -98,17 +99,18 @@
   "vim.statusBarColorControl": true,
   "vim.statusBarColors.normal": ["#ebbcba", "#191724"],
   "vim.statusBarColors.insert": ["#9ccfd8", "#191724"],
-  "vim.statusBarColors.commandlineinprogress": ["#eb6f92", "#191724"],
-  "vim.statusBarColors.searchinprogressmode": ["#eb6f92", "#191724"],
+  "vim.statusBarColors.commandlineinprogress": ["#31748f", "#191724"],
+  "vim.statusBarColors.searchinprogressmode": ["#31748f", "#191724"],
   "vim.statusBarColors.visual": ["#c4a7e7", "#191724"],
   "vim.statusBarColors.visualline": ["#c4a7e7", "#191724"],
   "vim.statusBarColors.visualblock": ["#c4a7e7", "#191724"],
-  "vim.statusBarColors.replace": ["#31748f", "#191724"],
+  "vim.statusBarColors.replace": ["#eb6f92", "#191724"],
   "workbench.colorCustomizations": {
+    "terminal.background": "#191724",
+    "panel.background": "#191724",
     "scrollbar.shadow": "#00000000",
     "statusBar.background": "#c4a7e7",
     "statusBar.noFolderBackground": "#c4a7e7",
-    "statusBar.noFolderForeground": "#191724",
     "statusBar.debuggingBackground": "#c4a7e7",
     "statusBar.foreground": "#191724",
     "statusBar.debuggingForeground": "#191724",
@@ -157,8 +159,8 @@
   "vim.useCtrlKeys": true,
   // ! Highlighted Yank
   "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "rgba(238, 212, 159, 0.5)",
-  "vim.highlightedyank.textColor": "rgb(36, 39, 58)",
+  "vim.highlightedyank.color": "rgb(246, 193, 119)",
+  "vim.highlightedyank.textColor": "rgb(25, 23, 36)",
   "vim.highlightedyank.duration": 150,
   // ! Vim Keybinds
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -303,5 +305,4 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "terminal.explorerKind": "external",
 }
