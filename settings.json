@@ -1,15 +1,11 @@
 {
   // ! VsCode Appearance
-  "git.openRepositoryInParentFolders": "never",
   "window.menuBarVisibility": "compact",
   "workbench.colorTheme": "Rosé Pine",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.editor.enablePreview": false,
-  "emulator.hasEditorTitleIcon": false,
   "workbench.activityBar.location": "hidden",
   "editor.fontFamily": "CaskaydiaMono NFM",
   "editor.fontLigatures": false,
-  "editor.suggest.insertMode": "replace",
   "editor.minimap.enabled": false,
   "workbench.tips.enabled": false,
   "breadcrumbs.enabled": false,
@@ -18,7 +14,6 @@
   "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "window.restoreWindows": "none",
-  "extensions.ignoreRecommendations": true,
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
   "editor.scrollbar.vertical": "hidden",
@@ -35,6 +30,10 @@
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.fontSize": 15,
   // ! VsCode Functionality
+  "workbench.editor.enablePreview": false,
+  "editor.suggest.insertMode": "replace",
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
   "workbench.settings.editor": "json",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -50,6 +49,7 @@
   "C_Cpp_Runner.useAddressSanitizer": true,
   "C_Cpp_Runner.useLinkTimeOptimization": true,
   // ! Android Emulator
+  "emulator.hasEditorTitleIcon": false,
   "emulator.emulatorPath": "C:\\Users\\ian\\AppData\\Local\\Android\\Sdk\\emulator",
   "emulator.emulatorPathWindows": "C:\\Users\\ian\\AppData\\Local\\Android\\Sdk\\emulator",
   // ! VSCodeVim Settings
@@ -77,6 +77,7 @@
     "statusBar.noFolderBackground": "#c4a7e7",
     "statusBar.debuggingBackground": "#c4a7e7",
     "statusBar.foreground": "#191724",
+    "statusBar.noFolderForeground": "#191724",
     "statusBar.debuggingForeground": "#191724",
     "titleBar.inactiveBackground": "#191724"
   },
@@ -245,6 +246,7 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
+  // ! Code Runner
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "javascript": "node",
