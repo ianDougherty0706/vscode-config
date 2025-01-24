@@ -126,6 +126,7 @@
     "key": "ctrl+pagedown",
     "command": "-workbench.action.nextEditor"
   },
+  / ! Swap Tabs that arent files using the same keybinds that files use
   {
     "key": "shift+l",
     "command": "workbench.action.nextEditor",
@@ -140,6 +141,7 @@
     "key": "ctrl+pageup",
     "command": "-workbench.action.previousEditor"
   },
+  / ! Stop making new files from a keybind
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
@@ -148,9 +150,26 @@
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
   },
+  /! Close window using same keybind as file
   {
     "key": "space q",
     "command": "workbench.action.closeActiveEditor",
     "when": "!editorTextFocus"
-  }
+  },
+  // ! Hide Completions
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineSuggestionVisible"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible"
+  },
 ]
