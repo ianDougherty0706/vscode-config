@@ -1,9 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "ctrl+q",
-    "command": "workbench.action.closeActiveEditor"
-  },
   // ! Terminal Navigation
   {
     "key": "ctrl+shift+a",
