@@ -122,7 +122,8 @@
     "key": "ctrl+pagedown",
     "command": "-workbench.action.nextEditor"
   },
-  / ! Swap Tabs that arent files using the same keybinds that files use
+
+  // ! Swap Tabs that arent files using the same keybinds that files use
   {
     "key": "shift+l",
     "command": "workbench.action.nextEditor",
@@ -137,7 +138,7 @@
     "key": "ctrl+pageup",
     "command": "-workbench.action.previousEditor"
   },
-  / ! Stop making new files from a keybind
+  // ! Stop making new files / windows from a keybind
   {
     "key": "ctrl+n",
     "command": "-workbench.action.files.newUntitledFile"
@@ -146,11 +147,10 @@
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
   },
-  /! Close window using same keybind as file
+  //! Close window using similar keybind as the vim motion
   {
-    "key": "space q",
+    "key": "alt+q",
     "command": "workbench.action.closeActiveEditor",
-    "when": "!editorTextFocus"
   },
   // ! Hide Completions
   {
@@ -172,5 +172,74 @@
     "key": "ctrl+e",
     "command": "hideSuggestWidget",
     "when": "suggestWidgetVisible"
+  },
+  // ! Set new open file / folder keybinds
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  // ! Removing Useless Keybinds
+  {
+    "key": "ctrl+shift+.",
+    "command": "-breadcrumbs.toggleToOn",
+    "when": "!config.breadcrumbs.enabled"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "-breadcrumbs.focus",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-editor.action.inPlaceReplace.down",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "-editor.action.accessibleViewGoToSymbol",
+    "when": "accessibilityHelpIsShown && accessibleViewGoToSymbolSupported || accessibleViewGoToSymbolSupported && accessibleViewIsShown"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFileFolder",
+    "when": "isMacNative && openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "-workbench.action.files.openLocalFolder",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFolderViaWorkspace",
+    "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+  },
+  {
+    "key": "ctrl+k ctrl+o",
+    "command": "-workbench.action.files.openFolder",
+    "when": "openFolderWorkspaceSupport"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
   },
 ]

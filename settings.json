@@ -1,10 +1,19 @@
 {
   // ! VsCode Appearance
+  "window.title": "NeoCode",
   "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "window.density.editorTabHeight": "compact",
+  "window.restoreWindows": "none",
   "workbench.colorTheme": "Rosé Pine",
   "workbench.iconTheme": "eq-material-theme-icons-darker",
   "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.tips.enabled": false,
   "editor.fontFamily": "CaskaydiaMono NFM",
+  "breadcrumbs.enabled": false,
   "editor.fontLigatures": false,
   "editor.minimap.enabled": false,
   "workbench.tips.enabled": false,
@@ -19,35 +28,29 @@
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
-  "workbench.layoutControl.enabled": false,
-  "window.title": "NeoCode",
-  "workbench.sideBar.location": "right",
   "editor.lineHeight": 1.2,
   "editor.fontSize": 15,
   "editor.lightbulb.enabled": "off",
   "editor.stickyScroll.enabled": false,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.fontSize": 15,
   // ! VsCode Functionality
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "terminal",
   "workbench.editor.enablePreview": false,
-  "editor.suggest.insertMode": "replace",
-  "extensions.ignoreRecommendations": true,
-  "git.openRepositoryInParentFolders": "never",
   "workbench.settings.editor": "json",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "editor.suggest.insertMode": "replace",
+  "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
   // ! Prettier
   "prettier.printWidth": 180,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // ! C/C++ Runner
-  "C_Cpp_Runner.cppStandard": "c++23",
-  "C_Cpp_Runner.cStandard": "c23",
-  "C_Cpp_Runner.useAddressSanitizer": true,
-  "C_Cpp_Runner.useLinkTimeOptimization": true,
   // ! Android Emulator
   "emulator.hasEditorTitleIcon": false,
   "emulator.emulatorPath": "C:\\Users\\ian\\AppData\\Local\\Android\\Sdk\\emulator",
@@ -97,6 +100,7 @@
   //   "titleBar.activeBackground": "#1e2030",
   //   "titleBar.inactiveBackground": "#1e2030",
   //   "statusBar.foreground": "#24273a",
+  //   "statusBar.noFolderForeground": "#24273a",
   //   "statusBar.debuggingForeground": "#24273a"
   // },
   "vim.highlightedyank.enable": true,
@@ -132,20 +136,8 @@
       "commands": ["fuzzySearch.activeTextEditor"]
     },
     {
-      "before": ["leader", "a"],
-      "commands": ["vscode-harpoon.addEditor"]
-    },
-    {
-      "before": ["leader", "e"],
-      "commands": ["vscode-harpoon.editEditors"]
-    },
-    {
       "before": ["leader", "D"],
       "commands": ["editor.action.goToTypeDefinition"]
-    },
-    {
-      "before": ["leader", "b"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
     },
     // ! c
     {
@@ -174,7 +166,7 @@
     // ! g
     {
       "before": ["leader", "g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "commands": ["editor.action.revealition"]
     },
     {
       "before": ["leader", "g", "r"],
@@ -204,31 +196,6 @@
       "before": ["leader", "r", "e"],
       "commands": ["emulator.start"]
     },
-    {
-      "before": ["leader", "r", "c", "d"],
-      "commands": ["C_Cpp_Runner.BuildAndDebugFile"]
-    },
-    {
-      "before": ["leader", "r", "c", "b"],
-      "commands": ["C_Cpp_Runner.BuildAndRunFile"]
-    },
-    // ! s
-    {
-      "before": ["leader", "s", "h"],
-      "commands": ["vscode-harpoon.editorQuickPick"]
-    },
-    {
-      "before": ["leader", "s", "p"],
-      "commands": ["workbench.action.showCommands"]
-    },
-    {
-      "before": ["leader", "s", "f"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["leader", "s", "."],
-      "commands": ["workbench.action.openRecent"]
-    }
   ],
   "vim.insertModeKeyBindings": [
     { "before": ["<C-h>"], "commands": ["cursorLeft"] },
@@ -241,6 +208,7 @@
     { "before": [">"], "commands": ["editor.action.indentLines"] },
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    { "before": ["<C-(>"], "commands": ["c()<Escape>P"] },
     {
       "before": ["leader", "c", "c"],
       "commands": ["editor.action.commentLine"]
