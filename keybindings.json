@@ -122,6 +122,7 @@
     "key": "ctrl+pagedown",
     "command": "-workbench.action.nextEditor"
   },
+
   // ! Swap Tabs that arent files using the same keybinds that files use
   {
     "key": "shift+l",
