@@ -16,13 +16,6 @@
   "breadcrumbs.enabled": false,
   "editor.fontLigatures": false,
   "editor.minimap.enabled": false,
-  "workbench.tips.enabled": false,
-  "breadcrumbs.enabled": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.editor.showTabs": "multiple",
-  "window.commandCenter": false,
-  "window.density.editorTabHeight": "compact",
-  "window.restoreWindows": "none",
   "editor.tabSize": 2,
   "editor.lineNumbers": "relative",
   "editor.scrollbar.vertical": "hidden",
@@ -32,19 +25,17 @@
   "editor.fontSize": 15,
   "editor.lightbulb.enabled": "off",
   "editor.stickyScroll.enabled": false,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.fontSize": 15,
   // ! VsCode Functionality
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.startupEditor": "terminal",
   "workbench.editor.enablePreview": false,
-  "workbench.settings.editor": "json",
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "editor.suggest.insertMode": "replace",
   "extensions.ignoreRecommendations": true,
   "git.openRepositoryInParentFolders": "never",
+  "workbench.settings.editor": "json",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   // ! Prettier
   "prettier.printWidth": 180,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -76,9 +67,9 @@
     "terminal.background": "#191724",
     "panel.background": "#191724",
     "scrollbar.shadow": "#00000000",
-    "statusBar.background": "#c4a7e7",
-    "statusBar.noFolderBackground": "#c4a7e7",
-    "statusBar.debuggingBackground": "#c4a7e7",
+    "statusBar.background": "#ebbcba",
+    "statusBar.noFolderBackground": "#ebbcba",
+    "statusBar.debuggingBackground": "#ebbcba",
     "statusBar.foreground": "#191724",
     "statusBar.noFolderForeground": "#191724",
     "statusBar.debuggingForeground": "#191724",
@@ -139,6 +130,10 @@
       "before": ["leader", "D"],
       "commands": ["editor.action.goToTypeDefinition"]
     },
+    {
+      "before": ["leader", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
     // ! c
     {
       "before": ["leader", "c", "a"],
@@ -166,7 +161,7 @@
     // ! g
     {
       "before": ["leader", "g", "d"],
-      "commands": ["editor.action.revealition"]
+      "commands": ["editor.action.revealDefinition"]
     },
     {
       "before": ["leader", "g", "r"],
@@ -196,7 +191,12 @@
       "before": ["leader", "r", "e"],
       "commands": ["emulator.start"]
     },
-  ],
+    // ! s
+        {
+      "before": ["leader", "s", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+      ],
   "vim.insertModeKeyBindings": [
     { "before": ["<C-h>"], "commands": ["cursorLeft"] },
     { "before": ["<C-l>"], "commands": ["cursorRight"] },
@@ -208,7 +208,6 @@
     { "before": [">"], "commands": ["editor.action.indentLines"] },
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    { "before": ["<C-(>"], "commands": ["c()<Escape>P"] },
     {
       "before": ["leader", "c", "c"],
       "commands": ["editor.action.commentLine"]
