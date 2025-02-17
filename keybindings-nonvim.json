@@ -1,53 +1,46 @@
+// Place your key bindings in this file to override the defaults
 [
-  // ! Terminal Navigation
+  // ! Text Navigation
   {
-    "key": "alt+j o",
-    "command": "workbench.action.togglePanel"
+    "key": "ctrl+l",
+    "command": "cursorRight",
+    "when": "textInputFocus"
   },
   {
-    "key": "alt+j n",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
+    "key": "ctrl+h",
+    "command": "cursorLeft",
+    "when": "textInputFocus"
   },
   {
-    "key": "alt+j p",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
+    "key": "ctrl+k",
+    "command": "cursorUp",
+    "when": "textInputFocus"
   },
   {
-    "key": "alt+j a",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+j q",
-    "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "alt+j l",
-    "command": "workbench.action.terminal.focusNextPane"
+    "key": "ctrl+j",
+    "command": "cursorDown",
+    "when": "textInputFocus"
   },
   // ! Sidebar Navigation
   {
-    "key": "alt+e o",
-    "command": "workbench.action.toggleSidebarVisibility"
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "alt+e e",
-    "command": "workbench.files.action.focusFilesExplorer"
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "alt+e x",
-    "command": "workbench.extensions.action.focusExtensionsView"
+    "key": "l",
+    "command": "list.expand",
+    "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "alt+e g",
-    "command": "workbench.scm.action.focusNextResourceGroup"
-  },
-  {
-    "key": "alt+e t",
-    "command": "thunder-client-sidebar.focus"
+    "key": "h",
+    "command": "list.collapse",
+    "when": "listFocus && treeElementCanExpand && !inputFocus && !treestickyScrollFocused || listFocus && treeElementHasChild && !inputFocus && !treestickyScrollFocused"
   },
   {
     "key": "a",
@@ -91,25 +84,59 @@
   },
   // ! File Navigation
   {
-    "key": "alt+o f",
-    "command": "workbench.action.quickOpen",
+    "key": "alt+o d",
+    "command": "workbench.action.files.openFolder"
   },
   {
-    "key": "alt+o d",
-    "command": "workbench.action.files.openFileFolder",
+    "key": "alt+o f",
+    "command": "workbench.action.files.openFile"
   },
   {
     "key": "alt+o n",
-    "command": "workbench.action.files.newUntitledFile",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  // ! Quick Open Navigation
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "quickInput.next",
+    "when": "inQuickInput"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "quickInput.previous",
+    "when": "inQuickInput"
+  },
+  // ! Terminal Navigation
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   },
   // ! Swap Tabs that arent files using the same keybinds that files use
   {
     "key": "alt+l",
     "command": "workbench.action.nextEditor",
+    "when": "!editorTextFocus || !terminalFocus"
   },
   {
     "key": "alt+h",
     "command": "workbench.action.previousEditor",
+    "when": "!editorTextFocus || !terminalFocus"
   },
   {
     "key": "ctrl+pagedown",
@@ -132,9 +159,5 @@
   {
     "key": "alt+q",
     "command": "workbench.action.closeActiveEditor"
-  },
-  {
-    "key": "alt+/",
-    "command": "fuzzySearch.activeTextEditor"
-  },
+  }
 ]
