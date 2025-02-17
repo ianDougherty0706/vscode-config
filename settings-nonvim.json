@@ -1,8 +1,6 @@
 {
   // ! VsCode Appearance
   "window.title": "NeoCode",
-  "window.menuBarVisibility": "hidden",
-  "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "window.restoreWindows": "none",
   "breadcrumbs.enabled": false,
@@ -11,8 +9,9 @@
   "editor.fontFamily": "CaskaydiaMono Nerd Font Mono",
   "editor.lineNumbers": "relative",
   "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.horizontal": "hidden",
   "editor.lineHeight": 25,
   "editor.fontSize": 16,
   "editor.lightbulb.enabled": "off",
@@ -27,17 +26,28 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.editor.showTabs": "multiple",
-  "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.tips.enabled": false,
-  "workbench.activityBar.location": "hidden",
   "editor.cursorStyle": "line-thin",
   "editor.cursorBlinking": "blink",
   "editor.codeLens": false,
   "explorer.compactFolders": false,
+  "workbench.activityBar.location": "hidden",
+  "chat.commandCenter.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "debug.showInlineBreakpointCandidates": false,
   "workbench.colorCustomizations": {
     "scrollbar.shadow": "#00000000",
-    // ! Monokai Pro 
+    // ! Monokai Pro
+    "[Monokai Pro]": {
+      "titleBar.border": "#00000000",
+      "sideBar.border": "#00000000",
+      "statusBar.border": "#00000000",
+      "editorGroup.border": "#00000000",
+      "panel.background": "#2d2a2e",
+      "terminal.background": "#2d2a2e",
+    },
     // ! Tokyo Night
     "[Tokyo Night]": {
       "editorGroupHeader.border": "#16161e",
@@ -106,6 +116,13 @@
   "explorer.confirmDragAndDrop": false,
   "files.dialog.defaultPath": "C:\\Users\\ian\\Code\\",
   "files.simpleDialog.enable": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.showFoldingControls": "never",
+  "editor.guides.indentation": false,
+  "editor.renderLineHighlight": "none",
+  "editor.overviewRulerBorder": false,
+  "livePreview.openPreviewTarget": "External Browser",
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
@@ -119,4 +136,5 @@
   "emulator.hasEditorTitleIcon": false,
   "emulator.emulatorPath": "C:\\Users\\ian\\AppData\\Local\\Android\\Sdk\\emulator",
   "emulator.emulatorPathWindows": "C:\\Users\\ian\\AppData\\Local\\Android\\Sdk\\emulator",
+  "window.menuBarVisibility": "compact",
 }
